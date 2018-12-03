@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy as np
 import sys
-
+import random
 
 # @Author: Kai Ding
 # @Param: information and image carrier(PNG or BMP)
