@@ -2,6 +2,7 @@ from PIL import Image
 import numpy as np
 import sys
 
+
 # @Author: Kai Ding
 # @Param: information and image carrier(PNG or BMP)
 # This program is going implemented the Steganography and return the new image with information
