@@ -8,14 +8,13 @@ import sys
 start = "111111110"
 stop = "000000001"
 
-
-# convert string to binary(each char 8 bit)
 def str2binary(value):
     result = ''
     for ele in value.encode():
         result += '{0:08b}'.format(ele)
-    print(result)
-    result = start + result + stop
+    # generate random bits to sucre the information
+    random_bits = '{0:08b}'.format(random.randint(29, 312))
+    result = random_bits + start + result + stop
     return result
 
 
