@@ -49,5 +49,6 @@ if __name__ == '__main__':
     # convert it back to utf-8 encode character
     for i in range(len(bi_information) // 8):
         p_information += (chr(int(bi_information[i * 8:i * 8 + 8], 2)))
+    with open("new_output.txt","w") as f:
+        f.write(p_information)
 
-    print(p_information)

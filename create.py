@@ -3,7 +3,7 @@ import string
 
 
 def main():
-    h = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(1000000))
+    h = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10000))
     with open("Output.txt", "w") as text_file:
         text_file.write(h)
 
