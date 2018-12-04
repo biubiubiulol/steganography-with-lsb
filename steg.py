@@ -51,4 +51,6 @@ def lsb(info, image_name):
 if __name__ == '__main__':
     info = sys.argv[1]
     image_name = sys.argv[2]
-    lsb(info, image_name)
+    with open(info, 'r') as myfile:
+        data = myfile.read()
+    lsb(data, image_name)
